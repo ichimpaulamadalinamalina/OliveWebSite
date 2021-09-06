@@ -1,0 +1,33 @@
+<div id="altceva">
+    <h1 id="titlu">Desenează o măslină</h1>
+    <br>   <br>   <br>   <br>   <br>  <br> 
+    <div class="container1">
+      
+        <div id="nav">
+            <ul>
+                <li id="new" onclick="delet()">Desen nou</li>
+                <li><a id="save" href="" onclick="DownloadCanvasAsImage()" >Descarcă png</a></li> 
+            </ul>
+        </div>
+        <canvas id="paint"></canvas>
+         <form>
+             <label for="color_hexa">Culoare :</label>
+            <input type="color" value="	#008543" id="color_hexa" name="color_hexa" />
+            <label for="brush">Grosime creion :</label>
+            <select name="brush" id="brush">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </form>
+    </div>
+</div>
+   
+<script src="/script.js"></script>

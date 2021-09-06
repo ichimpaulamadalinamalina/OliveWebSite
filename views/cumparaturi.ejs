@@ -1,0 +1,65 @@
+<%if(eroare != null){%>
+    <h2 style="color:red"><%=eroare%></h2>
+  <%}%>
+  <%if(utilLogat != null){%>
+    <h4 class="login">
+        Logat ca <%=utilLogat%>
+    </h4>
+    <form method="get" action="/logout">
+        <button type="submit">Deconectare</button> 
+    </form>
+
+
+    <h2><br>Produsele măslinăriei noastre</h2><br>
+    <p id="reduceri"></p>
+
+
+</div>
+<div class="container2">
+<% items.forEach(function(item) {%>
+   <div class="column">
+       <h5>
+           <%= item.name%>
+       </h5>
+       
+       <img src="<%=item.imagine%>" width="300" height="300">
+       <h5>
+        <%= item.price%>lei
+       </h5>
+       <form action="/adaugare-cos" method="POST">
+           <input type="hidden" name="id" value="<%=item.name%>">
+           <input type="hidden" name="id2" value="<%=item.price%>">
+           <button type="submit">Adaugă în coș</button>
+       </form>     
+   </div>
+ 
+  
+<%});%>
+</div> 
+<br>
+
+<div class="a">
+<form action="/vizualizare_cos" method="GET">
+<button type="submit">Vizualizare coș</button>
+</form>
+</div>
+
+
+
+
+  <%}%>
+  <%if(utilLogat == null){%>
+    <form method="get" action="/autentificare">
+        <button type="submit">Autentificare</button> 
+        <h2>Trebuie să te autentifici pentru a putea comanda</h2>
+    </form>
+  <%}%>
+
+
+
+  <script src="/reduceri.js"></script>
+
+
+
+
+

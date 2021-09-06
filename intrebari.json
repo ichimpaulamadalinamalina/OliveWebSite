@@ -1,0 +1,47 @@
+[
+    {
+    "intrebare": "Care măsline sunt cele mai bune?",
+    "variante": ["Negre", "Verzi"],
+    "corect": 1
+    },
+    {
+        "intrebare": "De ce factori depind culoarea și nuanța măslinelor?",
+        "variante": ["Gradul de maturitate", "Solul", "Rasa", "Apa"],
+        "corect": 0
+    },
+    {
+        "intrebare": "În ce vitamina sunt concentrate măslinele?",
+        "variante": ["A", "B", "C", "D","E"],
+        "corect": 4
+    },
+    {
+        "intrebare": "Măslinele sunt:",
+        "variante": ["sărace în carbohidrați", "bogate în carbohidrați"],
+        "corect": 0
+    }
+    ,
+    {
+        "intrebare": "Ce țară e cea mai mare producător de măsline:",
+        "variante": ["România", "Spania", "Australia","Italia"],
+        "corect": 1
+    }
+    ,
+    {
+        "intrebare": "Cât de mult poate trăi un măslin?",
+        "variante": ["100 ani", "2000 de ani", "10 ani","25 de ani"],
+        "corect": 1
+    }
+    ,
+    {
+        "intrebare": "De cât timp cultivează oamenii măsline:",
+        "variante": ["100 de ani", "500 de ani", "2000 de ani","6000 de ani"],
+        "corect": 3
+    }
+    ,
+    {
+        "intrebare": "Ce procentaj din măsline este folosit pentru ulei:",
+        "variante": ["10%", "50%", "90%","25%"],
+        "corect": 2
+    }
+
+]

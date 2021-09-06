@@ -1,0 +1,35 @@
+<h2>Coșul dumneavoastră contine:</h2><br><br>
+<div class="b">
+<% if(produse &&  produse.length > 0) { %>
+    <div style="font-size: 20px; padding-left: 60px;">
+        
+            <table class="center5" border="1.5">
+                <tr>
+                    <th>Nume produs</th>
+    
+                    <th>Preț</th>
+                
+            <% produse.forEach(function(element) { %>
+                
+                    <tr>
+                        <td><%= element[0]%></td>
+                        <td><%=element[1]%>lei</td>
+                    </tr><% }); %>
+                </tr>   
+            </table>                     
+        
+        
+    </div>
+    <% }; %> 
+
+<br>
+<form method="get" action="/cumparaturi">
+    <button id="ina" type="submit">Inapoi</button>
+</form>
+
+<form method="get" action="/comanda">
+    <button id="ina" type="submit">Finalizare cumparaturi</button>
+</form>
+
+
+</div>

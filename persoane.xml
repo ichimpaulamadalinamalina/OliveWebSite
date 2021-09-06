@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persoane>
+    <persoana id="1">
+        <adresa>
+            <strada>Tudor Vladimirescu</strada>
+            <camin>T 19</camin>
+            <localitate> Iasi</localitate>
+        </adresa>>
+        <email> malinaichim940@gmail.com</email>
+        <telefon>0759146068</telefon>
+    </persoana>
+    <persoana id="2">
+        <adresa>
+            <strada>Bulevardul Socola</strada>
+            <camin>Numarul 34</camin>
+            <localitate> Iasi</localitate>
+        </adresa>>
+        <email> malinaichim00@gmail.com</email>
+        <telefon>0757644346</telefon>
+    </persoana>
+    
+</persoane>

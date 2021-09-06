@@ -1,0 +1,34 @@
+<form action="/rezultat-chestionar", method="POST">
+<br><br>
+    <div class="container">
+      <img src="green2.png" alt="Notebook" style="width:100%;">
+      <div class="content1">
+          <br>
+      <h1>OLIVES QUIZ</h1><br>
+
+        <% for(var i=0;i<intrebari.length; i++){%>
+            <div><br>
+              <h2><%= intrebari[i].intrebare %></h2><br>
+                <% for(var j=0;j<intrebari[i].variante.length; j++){%>
+                    
+                    <input type="radio" name= <%="q" + i%> value="<%=intrebari[i].variante[j]%>"/>
+                    
+                    <label><%= intrebari[i].variante[j] %></label>
+                  
+                    
+                
+            <% }%>
+            
+            </div>
+                
+         <%}%>
+   <br/>
+   <br> <br> <br>
+   
+   <div class="center">
+    <br> 
+    <button type="submit">Finish quiz</button>
+   </div>
+     </form>
+    </div>
+</div>
